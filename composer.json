@@ -17,5 +17,5 @@
         "psr-0": { "Elcweb\\AngularJSBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Elcweb/AngularJSBundle",
+    "target-dir": "Elcweb/AngularJSBundle"
 }
