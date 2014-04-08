@@ -1,0 +1,16 @@
+{
+  "name": "AngularJSBundle",
+  "version": "0.0.0",
+  "homepage": "https://github.com/elcweb/angularjs-bundle",
+  "authors": [
+    "Etienne Lachance <et@etiennelachance.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
