@@ -1,5 +1,11 @@
-{% javascripts
-    '@ElcwebAngularJSBundle/Resources/public/js/angular.min.js'
-    %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-{% endjavascripts %}
+<script type="text/javascript" src="{{ asset('/bundles/elcwebangularjs/vendor/angular/angular.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/js/xeditable.min.js') }}"></script>
+<link href="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/css/xeditable.css') }}" rel="stylesheet">
+
+<script type="text/javascript">
+    var app = angular.module('app', ["xeditable"]).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
+
+    app.run(function(editableOptions) {
+        editableOptions.theme = 'bs3';
+    });
+</script>
