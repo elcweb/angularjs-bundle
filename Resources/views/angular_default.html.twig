@@ -1,6 +1,8 @@
 {% javascripts
     '../vendor/components/angular.js/angular.js'
     '../vendor/components/angular.js/angular-resource.js'
+    '../vendor/angular/strap/dist/angular-strap.js'
+    '../vendor/angular/strap/dist/angular-strap.tpl.js'
     %}
     <script src="{{ asset_url }}"></script>
 {% endjavascripts %}
@@ -8,7 +10,7 @@
 <link href="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/css/xeditable.css') }}" rel="stylesheet">
 
 <script type="text/javascript">
-    var app = angular.module('app', ['ngResource', "xeditable"]).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
+    var app = angular.module('app', ['ngResource', 'mgcrea.ngStrap', 'xeditable']).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
 
     app.run(function(editableOptions) {
         editableOptions.theme = 'bs3';
