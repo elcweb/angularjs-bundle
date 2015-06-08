@@ -9,10 +9,10 @@
 {% endjavascripts %}
 <script type="text/javascript" src="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/js/xeditable.min.js') }}"></script>
 <link href="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/css/xeditable.css') }}" rel="stylesheet">
-<link href="{{ asset('/bundles/elcwebangularjs/vendor/angular-notify/dist/angular-notify.css') }}" rel="stylesheet">
+<link href="{{ asset('../vendor/angular/notify/dist/angular-notify.css') }}" rel="stylesheet">
 
 <script type="text/javascript">
-    var app = angular.module('app', ['ngResource', 'mgcrea.ngStrap', 'xeditable', cgNotify]).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
+    var app = angular.module('app', ['ngResource', 'mgcrea.ngStrap', 'xeditable', 'cgNotify']).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
 
     app.run(function(editableOptions) {
         editableOptions.theme = 'bs3';
