@@ -10,7 +10,7 @@
 <link href="{{ asset('/bundles/elcwebangularjs/vendor/angular-xeditable/dist/css/xeditable.css') }}" rel="stylesheet">
 
 <script type="text/javascript">
-    var app = angular.module('app', ['ngResource', 'mgcrea.ngStrap', 'xeditable']).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
+    var app = angular.module('app', ['ngResource', 'mgcrea.ngStrap', 'xeditable', cgNotify]).config(function($interpolateProvider){ $interpolateProvider.startSymbol('{[{').endSymbol('}]}');});
 
     app.run(function(editableOptions) {
         editableOptions.theme = 'bs3';
