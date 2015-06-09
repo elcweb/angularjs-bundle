@@ -14,7 +14,8 @@
         "symfony/framework-bundle" : ">=2.1,<3.0-dev",
         "components/angular.js": "1.3.*",
         "angular/strap": "v2.2.4",
-        "angular/notify": "v2.5.0"
+        "angular/notify": "v2.5.0",
+        "angular/input-mask": "v1.5.1"
     },
     "autoload": {
         "psr-0": { "Elcweb\\AngularJSBundle": "" }
@@ -43,6 +44,18 @@
                     "url" : "https://github.com/cgross/angular-notify.git",
                     "type": "git",
                     "reference": "v2.5.0"
+                }
+            }
+        },
+        {
+            "type"   : "package",
+            "package": {
+                "name"   : "angular/input-mask",
+                "version": "v1.5.1",
+                "source"   : {
+                    "url" : "https://github.com/assisrafael/angular-input-masks.git",
+                    "type": "git",
+                    "reference": "v1.5.1"
                 }
             }
         }
